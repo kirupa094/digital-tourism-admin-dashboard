@@ -1,9 +1,7 @@
 {
-  "name": "@minimal/material-kit-react",
-  "author": "minimals.cc",
-  "licence": "MIT",
-  "version": "1.7.0",
-  "private": false,
+  "name": "digital-tourism-admin",
+  "author": "techserw",
+  "version": "0.1.0",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
