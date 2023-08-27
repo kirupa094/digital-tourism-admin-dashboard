@@ -15,6 +15,10 @@ import DashboardAppPage from './pages/DashboardAppPage';
 export default function Router() {
   const routes = useRoutes([
     {
+      path: '/',
+      element: <LoginPage />, 
+    },
+    {
       path: '/dashboard',
       element: <DashboardLayout />,
       children: [
@@ -26,13 +30,8 @@ export default function Router() {
       ],
     },
     {
-      path: 'login',
-      element: <LoginPage />,
-    },
-    {
       element: <SimpleLayout />,
       children: [
-        { element: <Navigate to="/dashboard/app" />, index: true },
         { path: '404', element: <Page404 /> },
         { path: '*', element: <Navigate to="/404" /> },
       ],
